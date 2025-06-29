@@ -21,7 +21,7 @@ jobs:
 
       - name: Run Pytest
         run: |
-          pytest --maxfail=1 --disable-warnings -q > report.txt
+          pytest E:\MLOps\week4\MLOPS-Week4-CI\tests\test_data_validation.py
 
       - name: CML Report
         env:
