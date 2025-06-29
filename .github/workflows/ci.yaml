@@ -1,6 +1,6 @@
 name: Iris Sanity Test
 
-on: [pull_request]
+on: [ pull_request ]
 
 jobs:
   test:
@@ -22,10 +22,4 @@ jobs:
       - name: Run Pytest
         run: |
           pytest E:\MLOps\week4\MLOPS-Week4-CI\tests\test_data_validation.py
-
-      - name: CML Report
-        env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          pip install cml
-          cml comment < report.txt
+          pytest E:\MLOps\week4\MLOPS-Week4-CI\tests\test_model_evaluation.py
